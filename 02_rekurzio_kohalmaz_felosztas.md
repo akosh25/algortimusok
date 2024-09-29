@@ -1,5 +1,6 @@
 # 1. Rekurziós algoritmus
 # Stone Division, Revisited probléma - Hackerrank, közepes nehézség
+Link: https://www.hackerrank.com/challenges/stone-division-2/problem?isFullScreen=true
 
 ## Leírás
 Van egy n darab kőből álló halmazod, amelyet több részhalmazra szeretnél felosztani. Ezen kívül adott egy S halmaz, amely m darab különböző egész számot tartalmaz. Egy lépés végrehajtása a következő módon történik:

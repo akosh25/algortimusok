@@ -1,5 +1,6 @@
 # 1. Rendezési algoritmus
 # Lily's Homework probléma - Hackerrank, közepes nehézség
+Link: https://www.hackerrank.com/challenges/lilys-homework/problem?isFullScreen=true
 
 ## Feladat leírása
 George akárhányszor próbálja Lily-t elhívni, mindig elfoglalt a házi feladat megoldásával. Ezért George szeretne segíteni neki, hogy gyorsabban végezzen de ez meghaladja a képességeit. Tudnál segíteni Georgenak, hogy megértse Lile házifeladatát, hogy együtt tudjanak lógni?
