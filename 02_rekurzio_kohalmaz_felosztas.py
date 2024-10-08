@@ -17,9 +17,9 @@ def stoneDivision(n, s):
         
         # iteralunk az osszes lehetseges oszton
         for x in s:
-            # csak akkor osztjuk tovabb a halmazt, ha az oszthato x-szel és az osztas utan tobb, mint 1 reszre oszlik
+            # csak akkor osztjuk tovabb a halmazt, ha az oszthato x-szel es az osztas utan tobb, mint 1 reszre oszlik
             if n % x == 0 and n != x:
-                # az aktualis mozgas szamitasa: hanyszor tudjuk osztani a reszeket és hanyszor oszthato tovabb
+                # az aktualis mozgas szamitasa: hanyszor tudjuk osztani a reszeket es hanyszor oszthato tovabb
                 parts = n // x
                 max_moves = max(max_moves, parts * dfs(x) + 1)
 

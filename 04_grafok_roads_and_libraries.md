@@ -37,8 +37,6 @@ A következő sorok minden lekérdezést az alábbi formátumban írnak le:
 - Az első sor négy szóközökkel elválasztott egész számot tartalmaz, amelyek a következő értékeket írják le: n, m, c_lib, c_road (a városok száma, az utak száma, a könyvtár költsége és az út költsége).
 - A következő m sor mindegyike két szóközökkel elválasztott egész számot tartalmaz, amelyek u és v (az összekapcsolható városok).
 
-## Korlátozások
 
-- 1 <= q <= 10
 
 Minden út két különböző várost köt össze.
