@@ -1,4 +1,4 @@
-# 1. Rekurziós algoritmus
+# 2. Rekurziós algoritmus
 # Stone Division, Revisited probléma - Hackerrank, közepes nehézség
 Link: https://www.hackerrank.com/challenges/stone-division-2/problem?isFullScreen=true
 
