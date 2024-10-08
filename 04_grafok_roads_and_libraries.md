@@ -2,35 +2,43 @@
 # Roads and Libraries probléma - Hackerrank, közepes nehézség
 Link: https://www.hackerrank.com/challenges/torque-and-development/problem?isFullScreen=true
 
+## Feladat
+Határozd meg a minimális költséget a könyvtárhozzáférés biztosításához HackerLand összes polgára számára.
+
 ## Leírás
-Az algoritmusok annyira jók lettek a piaci előrejelzések tekintetében, hogy most már tudjuk, mi lesz a Wooden Orange Toothpicks (WOT) részvényeinek árfolyama a következő napokban.
+HackerLand városai számozva vannak 1-től n-ig. Jelenleg nincsenek könyvtárak, és a városok nincsenek összekapcsolva. Két város között bármely, a cities tömbben felsorolt várospár között két-direkcionális utakat lehet építeni. Egy polgár hozzáfér a könyvtárhoz, ha:
+- A városa tartalmaz egy könyvtárat.
+- Úton eljuthat egy olyan városba, ahol van könyvtár.
 
-Minden nap vásárolhatunk egy WOT-részvényt, eladhatunk tetszőleges számú WOT-részvényt, vagy egyáltalán nem kötünk tranzakciót. 
-Kérdés: Mekkora az a maximális profit, amit egy optimális kereskedési stratégia mellett elérhetünk?
+## Példa
 
-Példa: price = [1, 3]
-Végy egy részvényt az első napon, majd add el a második napon 2 egységnyi nyereségért. Visszatérítés: 2.
-price = [2, 1]
-Nem érhető el nyereség, mivel egyik nap sem éri meg venni vagy eladni. Visszatérítés: 0.
+A bármely út építési költsége c_road, és a bármely városban épített könyvtár költsége c_lib. Építs m utat c_road költséggel, és n könyvtárat c_lib költséggel. Az elérhető utak közül az egyik az m ciklusban nem szükséges.
 
-## Funkció leírás: 
-Készítsd el a stockmax függvényt a lenti formában:
-stockmax egy tömböt (prices) kap bemenetként, ami a részvény napi árainak előrejelzéseit tartalmazza.
-A függvény egy egész számot ad vissza, ami a maximálisan elérhető nyereség.
+Összesen q lekérdezés van, ahol minden lekérdezés egy HackerLand térképét, valamint a c_lib és c_road értékét tartalmazza. Minden lekérdezés esetén határozd meg a minimális költséget a könyvtárak elérhetőségének biztosításához minden polgár számára.
 
-## Bemenet Formátuma:
-Az első sor tartalmazza a tesztesetek számát t.
-Mindegyik teszteset két részből áll:
-Az első sor tartalmazza a napok számát n.
-A második sor tartalmazza a WOT napi részvényárainak listáját price[i] minden i napra.
+## Függvény Leírása
 
-### Korlátok:
-1 ≤ t ≤ 10
+A roadsAndLibraries a következő paramétereket tartalmazza:
 
-1 ≤ n ≤ 50,000
+- int n: az városok számát jelző egész szám
+- int c_lib: a könyvtár építési költsége
+- int c_road: az út építési költsége
+- int cities[m][2]: minden egyes elem két egész számot tartalmaz, amelyek azt a két várost jelölik, amelyek összeköthetők egy új úttal
 
-1 ≤ price[i] ≤ 100,000
+Visszatérés
+- int: a minimális költség
 
+## Bemeneti Formátum
 
-## Kimenet Formátuma: 
-Adj vissza t sort, mindegyik a maximálisan elérhető nyereséget tartalmazza a megfelelő tesztesethez.
+Az első sor egyetlen egész számot tartalmaz (q), amely a lekérdezések számát jelzi.
+
+A következő sorok minden lekérdezést az alábbi formátumban írnak le:
+
+- Az első sor négy szóközökkel elválasztott egész számot tartalmaz, amelyek a következő értékeket írják le: n, m, c_lib, c_road (a városok száma, az utak száma, a könyvtár költsége és az út költsége).
+- A következő m sor mindegyike két szóközökkel elválasztott egész számot tartalmaz, amelyek u és v (az összekapcsolható városok).
+
+## Korlátozások
+
+- 1 <= q <= 10
+
+Minden út két különböző várost köt össze.
