@@ -2,24 +2,24 @@
 
 import os
 
-# Rekurzív függvény a kőhalmaz felosztásához
+# Rekurziv fuggveny a kohalmaz felosztasahoz
 def stoneDivision(n, s):
     
-    # az ismétlődő számítások elkerülésére
+    # az ismetlodo szamitasok elkerulesere
     memo = {}
 
     def dfs(n):
-        # ha már kiszámoltuk ezt a halmazt, akkor az eredményt visszaadjuk
+        # ha mar kiszamoltuk ezt a halmazt, akkor az eredmenyt visszaadjuk
         if n in memo:
             return memo[n]
         
         max_moves = 0
         
-        # iterálunk az összes lehetséges osztón
+        # iteralunk az osszes lehetseges oszton
         for x in s:
-            # csak akkor osztjuk tovább a halmazt, ha az osztható x-szel és az osztás után több, mint 1 részre oszlik
+            # csak akkor osztjuk tovabb a halmazt, ha az oszthato x-szel és az osztas utan tobb, mint 1 reszre oszlik
             if n % x == 0 and n != x:
-                # az aktuális mozgás számítása: hányszor tudjuk osztani a részeket és hányszor osztható tovább
+                # az aktualis mozgas szamitasa: hanyszor tudjuk osztani a reszeket és hanyszor oszthato tovabb
                 parts = n // x
                 max_moves = max(max_moves, parts * dfs(x) + 1)
 

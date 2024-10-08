@@ -9,7 +9,7 @@ import sys
 
 def lilysHomework(arr):
 
-    # cserék megszámlálása
+    # cserek megszamlalasa
     def count_swaps(sorted_arr):
         swaps = 0
         visited = [False] * len(arr)
@@ -31,15 +31,15 @@ def lilysHomework(arr):
 
         return swaps
 
-    # rendezés növekvő és csökkenő sorrendben
+    # rendezes novekvo és csokkeno sorrendben
     sorted_arr_asc = sorted(arr)
     sorted_arr_desc = sorted(arr, reverse=True)
 
-    # cserék számolása mindkét esetre
+    # cserek szamolasa mindket esetre
     swaps_asc = count_swaps(sorted_arr_asc)
     swaps_desc = count_swaps(sorted_arr_desc)
 
-    # minimum számolás
+    # minimum szamolas
     return min(swaps_asc, swaps_desc)
 
 if __name__ == '__main__':

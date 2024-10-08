@@ -11,12 +11,12 @@ def stockmax(prices):
     max_price = 0
     profit = 0
     
-    # az árlista bejárása visszafelé!
+    # az arlista bejarasa visszafele!
     for price in reversed(prices):
-        #  ha az aktuális ár magasabb - frissítjük a max. árat
+        #  ha az aktualis ar magasabb - frissitjuk a max. arat
         if price > max_price:
             max_price = price
-        # nyereség: max ár - aktuális ár 
+        # nyereseg: max ar - aktualis ar 
         profit += max(0, max_price - price)
     
     return profit
