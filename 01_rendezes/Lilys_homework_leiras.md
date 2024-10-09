@@ -17,5 +17,4 @@ Egy minimális tömb így néz ki:
 3 7 --> [3, 15, 12, 7]
 7 15 --> [3, 7, 12, 15]
 
-Tehát összesen csak 2 cserére volt szüksége. 
-
+Tehát összesen csak 2 cserére volt szüksége.
